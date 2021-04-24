@@ -1,0 +1,9 @@
+<div class="user_info">
+  <p>Username: <%= @user.username %></p>
+  <p>Email: <%= @user.email %></p>
+  <p>Password: <%= @user.password %></p>
+  <p>This user was created at: <%= @user.created_at.strftime("%B %d %Y, %l:%M%P") %></p>
+  <p>This user was updated at: <%= @user.updated_at.strftime("%B %d %Y, %l:%M%P") %></p>
+</div>
+<%= link_to "Edit this user", edit_user_path(@user) %><br>
+<%= link_to "Go back to main page", root_path %>
